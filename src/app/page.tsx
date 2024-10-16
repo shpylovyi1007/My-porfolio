@@ -1,18 +1,14 @@
-import styles from "./page.module.css";
-import contacts from './contacts.json'
+import css from "./page.module.scss";
+import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className={styles.page}>
-      <ul >
-        {contacts.map((contact) => {
-          return <li key={contact.id}>
-            <h1>{contact.name}</h1>
-          </li>
-        }) }
-        
-       
-      </ul>
+    <div className={css.container}>
+      <div>
+        <h1 className={css.title}>Yevhenii Spylovyi</h1>
+        <p className={css.text}>Full-stack developer</p>
+      </div>
+      <Image src="/my_image.jpg" alt="My image" width={350} height={400} />
     </div>
   );
 };
