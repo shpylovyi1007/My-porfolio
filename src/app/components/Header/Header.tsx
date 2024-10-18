@@ -11,11 +11,10 @@ const Header = () => {
         <Link href="/">Home</Link>
         <Link href="/about">About me</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/contacts">Contact</Link>
       </nav>
-      <button className={css.button} type="button">
+      <Link href="/contacts" className={css.button} type="button">
         Contact me
-      </button>
+      </Link>
     </div>
   );
 };

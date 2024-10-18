@@ -1,0 +1,55 @@
+.container {
+  height: 100%;
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      max-width: 450px;
+      margin-top: 16px;
+    }
+
+    .project {
+      position: relative;
+    }
+
+    .img {
+      filter: brightness(50%);
+    }
+
+    .containerLink {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 20px;
+    }
+
+    .link {
+      padding: 30px;
+      border: 2px #fff solid;
+      border-radius: 35px;
+      background-color: #171717a8;
+      transition: transform 0.3s ease-in-out;
+
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .link:hover {
+      transform: scale(1.2);
+    }
+  }
+}

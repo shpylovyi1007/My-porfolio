@@ -1,9 +1,27 @@
 .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    .text {
-        max-width: 450px;
-        font-size: 24px;
-    }
+  .text {
+    max-width: 450px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: circle;
+    padding-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+  }
+
+  li:not(:last-child) {
+    width: 50%;
+    margin-bottom: 12px;
+  }
 }
