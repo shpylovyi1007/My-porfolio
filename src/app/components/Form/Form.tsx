@@ -29,16 +29,28 @@ const SignupForm = () => {
       {({ isSubmitting }) => (
         <Form className={css.container}>
           <h1 className={css.title}>Send your message</h1>
-          <div>
+          <div className={css.subcontainer}>
             <label htmlFor="name">Name</label>
             <Field className={css.input} name="name" />
             <ErrorMessage name="name" component="span" />
           </div>
 
-          <div>
+          <div className={css.subcontainer}>
             <label htmlFor="email">Email</label>
             <Field className={css.input} name="email" type="email" />
             <ErrorMessage name="email" component="span" />
+          </div>
+
+          <div className={css.subcontainer}>
+            <label htmlFor="textarea">You Message</label>
+            <Field
+              as="textarea"
+              className={css.input}
+              name="textarea"
+              rows="5"
+              cols="40"
+            />
+            <ErrorMessage name="textarea" component="span" />
           </div>
 
           <button type="submit" disabled={isSubmitting}>
