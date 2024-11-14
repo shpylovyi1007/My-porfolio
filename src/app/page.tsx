@@ -11,7 +11,13 @@ const Home = () => {
           Download CV
         </button>
       </div>
-      <Image src="/my_image.jpg" alt="My image" width={350} height={400} />
+      <Image
+        src="/my_image.jpg"
+        priority
+        alt="My image"
+        width={350}
+        height={400}
+      />
     </div>
   );
 };
